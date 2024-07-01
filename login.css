@@ -1,0 +1,193 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #dddada;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(40px);
+    z-index: 1;
+}
+
+.login-box {
+    width: 400px;
+    height: 590px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 2; /* Ensure it appears above the overlay */
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    word-spacing: 5px;
+}
+
+
+.login-box img {
+    transform: translate(-80px, 70px);
+    width: 200px;
+    hight: auto;
+}
+
+
+.login-input {
+    width: 325px;
+    height: 35px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background: #d8d7d7;
+    transform: translate(30px, 105px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.animated-placeholder {
+    position: absolute;
+    font-size: 16px;
+    color: #aaa;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+
+    white-space: nowrap;
+}
+
+.login-input:focus + .animated-placeholder,
+.login-input:not(:placeholder-shown) + .animated-placeholder {
+    opacity: 1;
+    transform: translate(30px, 20px) scale(0.9); /* Подстройте translateY для позиционирования */
+}
+
+
+.password-input {
+    width: 325px;
+    height: 35px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background: #d8d7d7;
+    transform: translate(30px, 155px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.animated-placeholder {
+    position: absolute;
+    font-size: 16px;
+    color: #aaa;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+
+    white-space: nowrap;
+}
+
+
+.password-input:focus + .animated-placeholder,
+.password-input:not(:placeholder-shown) + .animated-placeholder {
+    opacity: 1;
+    transform: translate(30px, 70px) scale(0.9); /* Adjust translateY for positioning */
+}
+
+
+#enter_button {
+    transform: translate(40px, 230px);
+    width: 290px;
+    height: 50px; /* Adjust height as needed */
+    border-radius: 25px;
+    background-color: white;
+    color: black;
+    border: solid 1px #000000;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    text-align: center;
+    line-height: 1.2;
+}
+
+#enter_button:hover{
+    background-color: black;
+    color: white;
+}
+
+#enter_button span {
+    vertical-align: middle; /* Center text vertically */
+}
+
+.line {
+
+    width: 335px; /* Line width */
+    height: 1px; /* Line thickness */
+    background-color: black; /* Line color */
+    top: 50%; /* Adjust positioning vertically */
+    transform: translate(25px, 190px);
+}
+
+
+#log_p1{
+    transform: translate(-170px, -140px);
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+#log_p1::before,
+#log_p1::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    background-color: black;
+    transition: width 0.5s ease, left 0.5s ease, right 0.5s ease;
+    width: 0;
+}
+
+#log_p1::before {
+        top: 0;
+        left: 50%;}
+
+#log_p1::after {
+    bottom: 0;
+    right: 50%;
+}
+
+#log_p1:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+#log_p1:hover::after {
+    width: 100%;
+    right: 0;
+}
+
+#log_p1:hover {
+    color: black;
+}

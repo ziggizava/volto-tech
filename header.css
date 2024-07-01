@@ -1,0 +1,189 @@
+/* header.css*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /*background-image: url('./page/zadniyfon2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center -5px; */
+    background: #e1dddd;
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px; /* Увеличены отступы для большей высоты */
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    height: 35px; /* Установлена фиксированная высота */
+    z-index: 1001;
+}
+
+.top-header:hover {
+
+    box-shadow:
+        0 20px 16px 4px rgba(248, 80, 47, 0.7);   /* Усиленная светло-фиолетовая тень снизу */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    transform: translateX(370px);
+
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.logo img {
+    height: 40px; /* Увеличен размер изображения */
+    transform: translate(0px, 0px);
+}
+
+nav {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.contribute-link {
+    text-decoration: none;
+    color: #000;
+    margin-right: 600px;
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding-bottom: 25px;
+    border-bottom: 4px solid #000;
+}
+
+
+.actions {
+    display: flex;
+    align-items: center;
+    transform: translateX(-400px);
+
+}
+
+.actions button {
+    margin-left: 10px;
+    padding: 10px 15px; /* Увеличены отступы для кнопок */
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+
+#serdse_icon {
+    width: 17px;
+    hight: 20px;
+    transform: translate(3px, 4px);
+}
+
+.login-button {
+    border: 2px solid #000000;
+    color: #000000;
+    border-radius:2px;
+    background-color: #ffffff;
+    position: fixed;
+    cursor: pointer;
+    transform: translateX(-100px);
+    line-height: 1;
+    transition: border-radius 0.5s;
+    width: 150px;
+}
+
+.login-button:hover {
+    border: 2px solid #000000;
+    color: #000000;
+    border-radius: 20px;
+    transition: border-radius 0.5s;
+}
+
+.language-button {
+    background-color: #fff;
+    color: #000000;
+    transform: translateX(70px);
+    border-radius: 2px;
+    cursor: pointer;
+    border: 2px solid #000000;
+    line-height: 1;
+    position: relative;
+    transition: border-radius 0.5s;
+}
+
+.language-button:hover{
+    border: 2px solid #000000;
+    transition: border-radius 0.5s;
+    border-radius: 20px;
+}
+
+.sub-header {
+    background-color: #f2f2f2; /* Серый фон подхедера */
+    padding: 10px 30px; /* Отступы для подхедера */
+    height: 30px;
+    z-index: 1000;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.sub-header-button {
+    margin-left: 40px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transform: translateX(350px);
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+
+.icon {
+    width: 20px; /* Установите желаемую ширину изображения */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    position: absolute; /* Позиционирование абсолютно относительно родительского блока */
+    left: -15px; /* Расстояние слева от края кнопки */
+    top: 50%; /* Центрируем по вертикали */
+    transform: translateY(-50%); /* Коррекция для центрирования по вертикали */
+}
+
+#icon1{
+    width: 20px; /* Установите желаемую ширину изображения */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    position: absolute; /* Позиционирование абсолютно относительно родительского блока */
+    left: -20px; /* Расстояние слева от края кнопки */
+    top: 50%; /* Центрируем по вертикали */
+    transform: translateY(-50%); /* Коррекция для центрирования по вертикали */
+}
+
+
+#icon2{
+    width: 20px; /* Установите желаемую ширину изображения */
+    height: 18px; /* Автоматическая высота для сохранения пропорций */
+    position: absolute; /* Позиционирование абсолютно относительно родительского блока */
+    left: -20px; /* Расстояние слева от края кнопки */
+    top: 50%; /* Центрируем по вертикали */
+    transform: translateY(-50%); /* Коррекция для центрирования по вертикали */
+}
+
+
+
+
+
+

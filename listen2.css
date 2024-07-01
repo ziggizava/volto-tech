@@ -1,0 +1,262 @@
+/* listen2.css*/
+
+#listen-conteyner {
+    width: 660px;
+    height: 270px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-350px, -80%);
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 35px;
+    line-height: 1.6; /* Установка высоты строки */
+    letter-spacing: 0.5px; /* Отступ между буквами */
+    word-spacing: 5px; /* Отступ между словами */
+
+}
+
+.listen-conteyner p{
+    transform: translateY(10px);
+}
+
+
+.round-libutton {
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    box-shadow:
+        -8px 8px 12px 2px rgba(255, 84, 54, 0.5),  /* Светло-красная тень с левой стороны */
+        8px 8px 12px 2px rgba(218, 112, 214, 0.5), /* Светло-фиолетовая тень с правой стороны */
+        0 -8px 12px 2px rgba(255, 84, 54, 0.5),    /* Светло-красная тень сверху */
+        0 8px 12px 2px rgba(218, 112, 214, 0.5);   /* Светло-фиолетовая тень снизу */
+    color: #333;
+    cursor: pointer;
+    font-size: 16px;
+    height: 85px;
+    width: 85px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 20px; /* Расстояние от нижнего края */
+}
+
+.round-libutton:hover {
+    transform: scale(1.1);
+    box-shadow:
+        -12px 12px 16px 4px rgba(248, 80, 47, 0.7),  /* Усиленная светло-красная тень с левой стороны */
+        12px 12px 16px 4px rgba(218, 112, 214, 0.7), /* Усиленная светло-фиолетовая тень с правой стороны */
+        0 -12px 16px 4px rgba(248, 80, 47, 0.7),    /* Усиленная светло-красная тень сверху */
+        0 12px 16px 4px rgba(218, 112, 214, 0.7);   /* Усиленная светло-фиолетовая тень снизу */
+}
+
+#listen_icon {
+    transform: translate(910px, 500px);
+
+}
+
+.round-libutton img {
+    hight: 35px;
+    width: 35px;
+    transform: translate(4px, 2px);
+}
+
+
+.skip-button {
+    background-color: white;
+    color: #000;
+    border: 1px solid #ccc; /* Светло-серый цвет рамки */
+    border-radius: 30px;
+    font-size: 15px;
+    position: fixed;
+    cursor: pointer;
+    transform: translate(1230px, 640px);
+    padding: 20px 40px;
+    font-weight: bold;
+    line-height: 1;
+    transition: border-color 0.3s;
+}
+
+.skip-button:hover {
+    border-color: #000;
+}
+
+
+.round-shbutton {
+    background-color: white;
+    color: #000;
+    border: 1px solid #ccc;
+    border-radius: 50%; /* Круглая форма */
+    font-size: 15px;
+    width: 60px; /* Ширина кнопки */
+    height: 60px; /* Высота кнопки */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    cursor: pointer;
+    transform: translate(685px, 535px); /* Настройте положение кнопки */
+    transition: border-color 0.3s, box-shadow 0.3s;
+    text-align: center;
+    line-height: 1.2; /* Для центрирования текста внутри кнопки */
+}
+
+.round-shbutton:hover {
+   border-color: #000;
+}
+
+.round-shbutton span {
+    vertical-align: middle; /* Центрирование текста */
+}
+
+.round-shbutton img {
+    width: 25px;
+    hight: 25px;
+}
+
+
+.yes-button {
+    background-color: #ffffff; /* Светло-серый цвет для отключенной кнопки */
+    color: #000000; /* Темно-серый цвет текста */
+    border: 1px solid #999;
+    border-radius: 30px;
+    font-size: 15px;
+    position: fixed;
+    transform: translate(1050px, 420px);
+    padding: 10px 25px;
+    font-weight: bold;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.yes-button:hover {
+    transition: background-color 0.3s;
+    background-color: #16cd16; /* Зеленый цвет при наведении */
+}
+
+.yes-button span {
+    margin-left: 10px;
+}
+
+#yes_photo {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+
+.no-button {
+    background-color: #ffffff; /* Светло-серый цвет для отключенной кнопки */
+    color: #000000; /* Темно-серый цвет текста */
+    border: 1px solid #999;
+    border-radius: 30px;
+    font-size: 15px;
+    position: fixed;
+    transform: translate(730px, 420px);
+    padding: 10px 27px;
+    font-weight: bold;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.no-button:hover {
+    transition: background-color 0.3s;
+    background-color: #df1010;
+}
+
+.no-button span {
+    margin-left: 10px;
+}
+
+#no_photo {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background: none;
+}
+
+
+#listen_number_1{
+    background-color: #ffffff; /* Светло-серый цвет для отключенной кнопки */
+    color: #000000; /* Темно-серый цвет текста */
+    border: 1px solid #999;
+    border-radius: 100%;
+    font-size: 17px;
+    position: fixed;
+    transform: translate(1650px, -30px);
+    padding: 10px 15px;
+    font-weight: bold;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#listen_number_2{
+    background-color: #ffffff; /* Светло-серый цвет для отключенной кнопки */
+    color: #000000; /* Темно-серый цвет текста */
+    border: 1px solid #999;
+    border-radius: 30px;
+    font-size: 17px;
+    position: fixed;
+    transform: translate(1650px, 50px);
+    padding: 10px 15px;
+    font-weight: bold;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#listen_number_3{
+    background-color: #ffffff; /* Светло-серый цвет для отключенной кнопки */
+    color: #000000; /* Темно-серый цвет текста */
+    border: 1px solid #999;
+    border-radius: 30px;
+    font-size: 17px;
+    position: fixed;
+    transform: translate(1650px, 130px);
+    padding: 10px 15px;
+    font-weight: bold;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#listen_number_4{
+    background-color: #ffffff; /* Светло-серый цвет для отключенной кнопки */
+    color: #000000; /* Темно-серый цвет текста */
+    border: 1px solid #999;
+    border-radius: 30px;
+    font-size: 17px;
+    position: fixed;
+    transform: translate(1650px, 210px);
+    padding: 10px 15px;
+    font-weight: bold;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#listen_number_5{
+    background-color: #ffffff; /* Светло-серый цвет для отключенной кнопки */
+    color: #000000; /* Темно-серый цвет текста */
+    border: 1px solid #999;
+    border-radius: 30px;
+    font-size: 17px;
+    position: fixed;
+    transform: translate(1650px, 290px);
+    padding: 10px 15px;
+    font-weight: bold;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

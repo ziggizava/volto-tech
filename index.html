@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Windows</title>
+    <link rel="stylesheet" href="header.css">
+</head>
+<body>
+
+
+    <header class="top-header">
+        <div class="logo">
+            <img src="voltotech.png" alt="Volto Logo">
+        </div>
+        <nav>
+            <a href="#" class="contribute-link">CONTRIBUTE</a>
+        </nav>
+        <div class="actions">
+            <button class="login-button">LOG IN / SIGN UP</button>
+            <button class="language-button">EN</button>
+        </div>
+    </header>
+
+
+
+    <div class="sub-header">
+        <button class="sub-header-button" data-target="card-speak">
+            <img src="microphone.png" id="icon1" alt="Microphone Icon"> <span>Speak</span>
+        </button>
+        <button class="sub-header-button" data-target="card-listen">
+            <img src="listen.png" id="icon2" alt="Listen Icon"> Listen
+        </button>
+    </div>
+
+
+
+    <div id="card-speak" class="card" style="display: none;">
+        <link rel="stylesheet" href="index.css">
+        <div class="speak-conteyner" id="speak-conteyner" contenteditable="true">
+             <p>The people that update these listings do not use a registered business name.</p>
+        </div>
+
+        <button class="round-button" id="micro"><img src="./micro2.png" id="micro_photo" alt="micro Icon"></button>
+        <button class="skip-button">>> &nbsp Skip </button>
+
+        <button id="speak_number_1">1</button>
+        <button id="speak_number_2">2</button>
+        <button id="speak_number_3">3</button>
+        <button id="speak_number_4">4</button>
+        <button id="speak_number_5">5</button>
+    </div>
+
+
+
+
+    <div id="card-listen" class="card" style="display: none;">
+        <link rel="stylesheet" href="listen2.css">
+        <div class="listen-conteyner" id="listen-conteyner">
+            <p>The people that update these listings do not use a registered business name.</p>
+        </div>
+
+        <button class="round-libutton" id="listen_icon"><img src="./listen_icon.png" id="listen_photo" alt="listen Icon"></button>
+        <button class="skip-button">>> &nbsp Skip </button>
+
+
+        <button class="yes-button"><img src="./yes2_icon.png" id="yes_photo" alt="Yes Icon"><span>YES</span></button>
+        <button class="no-button"><img src="./no3_icon.png" id="no_photo" alt="No Icon"><span>NO</span></button>
+
+        <button id="listen_number_1">1</button>
+        <button id="listen_number_2">2</button>
+        <button id="listen_number_3">3</button>
+        <button id="listen_number_4">4</button>
+        <button id="listen_number_5">5</button>
+    </div>
+
+
+
+
+    <div id="login-box" class="login-box" style="display: none;">
+        <link rel="stylesheet" href="login.css">
+        <img src="./voltotech.png" id="login-photo" alt="mozilla photo">
+        <input class="login-input" placeholder="Enter &nbsp your &nbsp username">
+        <p class="animated-placeholder"></p>
+        <input class="password-input" type="password" placeholder="Enter &nbsp your &nbsp password">
+        <p class="animated-placeholder">Enter your password</p>
+        <button id="enter_button"><span>Enter</span></button>
+        <div class="line"></div>
+
+        <a href="./"><p class="log_p" id="log_p1"> << Back</p></a>
+    </div>
+
+
+    <div id="overlay" class="overlay" style="display: none;"></div>
+
+
+    <script src="script.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>
